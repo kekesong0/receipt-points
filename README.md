@@ -151,15 +151,31 @@ You can access the app at: [http://localhost:8080](http://localhost:8080)
 
 ## 🗂 Project Structure
 
+The directory tree of the project is as follows:
+
 ```
-receiptpoints/
+receipt-points/
 ├── src/
-│   └── main/java/com/kekesong/...
-├── Dockerfile
+│   └── main/
+│       └── java/
+│           └── com.kekesong.receiptpoints/
+│               ├── common/
+│               │   └── BaseResponse.java
+│               ├── controller/
+│               │   └── ReceiptController.java
+│               ├── pojo/
+│               │   ├── Item.java
+│               │   └── Receipt.java
+│               ├── service/
+│               │   ├── ReceiptService.java
+│               │   └── impl/
+│               │       └── ReceiptServiceImpl.java
+│               └── ReceiptPointsApplication.java
 ├── build.gradle
+├── Dockerfile
 ├── README.md
 ├── gradlew / gradlew.bat
-└── ...
+└── settings.gradle
 ```
 
 ---
